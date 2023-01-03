@@ -6,7 +6,6 @@ const mail = require("./routes/mail");
 
 const app = express();
 
-// use cors
 app.use(cors());
 
 app.use(express.json());
