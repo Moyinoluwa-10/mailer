@@ -10,7 +10,7 @@ app.use(cors());
 
 app.use(express.json());
 
-app.use("/api/v1/send-email", mail);
+app.use("/api/v0/send-email", mail);
 
 // Home route
 app.get("/", (req, res) => {

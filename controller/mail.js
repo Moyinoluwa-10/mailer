@@ -5,6 +5,13 @@ const sendMail = async (req, res, next) => {
   try {
     const { name, email, message } = req.body;
 
+    if (!name || !email || !message) {
+      return res.status(400).json({
+        status: false,
+        message: "Please fill all the fields",
+      });
+    }
+
     // Set up the nodemailer transport
     const transporter = nodemailer.createTransport({
       service: "gmail",
