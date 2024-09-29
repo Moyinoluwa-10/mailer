@@ -7,19 +7,6 @@ exports.ContactEmail = ContactEmail;
 var _react = _interopRequireDefault(require("react"));
 var _components = require("@react-email/components");
 function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
-// const React = require("react");
-// const {
-//   Body,
-//   Container,
-//   Head,
-//   Html,
-//   Img,
-//   Link,
-//   Preview,
-//   Text,
-// } = require("@react-email/components");
-
-var baseUrl = process.env.VERCEL_URL ? "https://".concat(process.env.VERCEL_URL) : "http://localhost:3000";
 function ContactEmail(_ref) {
   var firstName = _ref.firstName;
   return /*#__PURE__*/_react["default"].createElement(_components.Html, null, /*#__PURE__*/_react["default"].createElement(_components.Head, null), /*#__PURE__*/_react["default"].createElement(_components.Preview, null, "Excited to connect with you! I'll review your message and respond as soon as possible."), /*#__PURE__*/_react["default"].createElement(_components.Body, {
@@ -27,7 +14,7 @@ function ContactEmail(_ref) {
   }, /*#__PURE__*/_react["default"].createElement(_components.Container, {
     style: container
   }, /*#__PURE__*/_react["default"].createElement(_components.Img, {
-    src: "".concat(baseUrl, "/logo.png"),
+    src: "https://res.cloudinary.com/dapwu9k1x/image/upload/v1727574713/p12yr9r5bwhjk4hvvat0.png",
     width: "118",
     height: "40",
     alt: "logo",

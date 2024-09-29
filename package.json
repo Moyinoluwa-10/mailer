@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest --detectOpenHandles"
+    "test": "jest --detectOpenHandles",
+    "build:email": "npx babel templates/email.jsx --out-file templates/email.js"
   },
   "keywords": [],
   "author": "",

@@ -1,15 +1,3 @@
-// const React = require("react");
-// const {
-//   Body,
-//   Container,
-//   Head,
-//   Html,
-//   Img,
-//   Link,
-//   Preview,
-//   Text,
-// } = require("@react-email/components");
-
 import React from "react";
 import {
   Body,
@@ -22,10 +10,6 @@ import {
   Text,
 } from "@react-email/components";
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
-
 export function ContactEmail({ firstName }) {
   return (
     <Html>
@@ -37,7 +21,9 @@ export function ContactEmail({ firstName }) {
       <Body style={main}>
         <Container style={container}>
           <Img
-            src={`${baseUrl}/logo.png`}
+            src={
+              "https://res.cloudinary.com/dapwu9k1x/image/upload/v1727574713/p12yr9r5bwhjk4hvvat0.png"
+            }
             width="118"
             height="40"
             alt="logo"
